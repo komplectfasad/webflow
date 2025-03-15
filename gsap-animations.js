@@ -3,6 +3,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
+
+  console.log('GSAP script loaded');
   
   // Initialize animations
   initAnimations();
