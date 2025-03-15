@@ -1,7 +1,4 @@
 <script>
-
-  console.log('GSAP script loaded');
-
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   // Register ScrollTrigger plugin
