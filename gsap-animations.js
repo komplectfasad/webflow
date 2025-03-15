@@ -392,24 +392,4 @@ if (projectCounter) {
   });
 }
     
-    // Animate project slides when they become active
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.attributeName === 'class') {
-          const slide = mutation.target;
-          if (slide.classList.contains('w-slide') && slide.classList.contains('swiper-slide-active')) {
-            gsap.fromTo(slide.querySelector('.slide-list'), 
-              { opacity: 0, y: 30 },
-              { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' }
-            );
-          }
-        }
-      });
-    });
-    
-    document.querySelectorAll('.slider-project .w-slide').forEach(slide => {
-      observer.observe(slide, { attributes: true });
-    });
-  }
-}
 </script>
